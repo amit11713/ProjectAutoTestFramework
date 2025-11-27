@@ -1,0 +1,209 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------< com.automation.framework:test-automation-framework >---------
+[INFO] Building Test Automation Framework 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ test-automation-framework ---
+[INFO] Deleting D:\ProjectAutoTestFramework\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ test-automation-framework ---
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.12.1:compile (default-compile) @ test-automation-framework ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 10 source files with javac [debug target 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ test-automation-framework ---
+[INFO] Copying 7 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ test-automation-framework ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 7 source files with javac [debug target 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ test-automation-framework ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+13:01:43.152 [main] DEBUG org.testng.TestNG -- suiteXmlPath: "D:\ProjectAutoTestFramework\src\test\resources\testng.xml"
+
+Scenario: Retrieve user data via GET request             # src/test/resources/features/api/api_placeholder.feature:3
+
+@UiTests @UiTests01
+Scenario: Handle multiple windows 01                                                                # src/test/resources/features/ui/ui_placeholder.feature:5
+
+@UiTests @UiTests02
+Scenario: Handle multiple windows 02                                                                # src/test/resources/features/ui/ui_placeholder.feature:17
+13:01:44.714 [TestNG-PoolService-1] INFO com.automation.framework.steps.api.APISteps -- Setting up API endpoint for users
+13:01:44.739 [TestNG-PoolService-2] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+13:01:44.754 [TestNG-PoolService-1] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.2
+  Given I have the API endpoint for users                # com.automation.framework.steps.api.APISteps.iHaveTheAPIEndpointForUsers()
+13:01:44.839 [TestNG-PoolService-1] INFO com.automation.framework.steps.api.APISteps -- Sending GET request to /users/1
+13:01:45.013 [TestNG-PoolService-2] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=142 in cache (valid until 13:44:11 27/11/2025 IST)
+13:01:45.013 [TestNG-PoolService-1] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=142 in cache (valid until 13:44:11 27/11/2025 IST)
+13:01:45.014 [TestNG-PoolService-2] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome142=142.0.7444.175 in cache (valid until 15:35:08 27/11/2025 IST)
+13:01:45.014 [TestNG-PoolService-1] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome142=142.0.7444.175 in cache (valid until 15:35:08 27/11/2025 IST)
+13:01:45.015 [TestNG-PoolService-2] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+13:01:45.015 [TestNG-PoolService-1] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+13:01:45.042 [TestNG-PoolService-1] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 142.0.7444.175 found in cache
+13:01:45.042 [TestNG-PoolService-2] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 142.0.7444.175 found in cache
+13:01:45.042 [TestNG-PoolService-1] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Amit11713\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+13:01:45.042 [TestNG-PoolService-2] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Amit11713\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+13:01:45.655 [TestNG-PoolService-1] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}->https://jsonplaceholder.typicode.com:443
+13:01:45.859 [TestNG-PoolService-1] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to jsonplaceholder.typicode.com:443
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: GET /users/1 HTTP/1.1
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  >> "GET /users/1 HTTP/1.1[\r][\n]"
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  >> "Accept: */*[\r][\n]"
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.0.1)[\r][\n]"
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- >> GET /users/1 HTTP/1.1
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- >> Accept: */*
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- >> Host: jsonplaceholder.typicode.com
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.0.1)
+13:01:46.039 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+13:01:46.111 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "HTTP/1.1 200 OK[\r][\n]"
+13:01:46.118 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "Date: Thu, 27 Nov 2025 07:31:45 GMT[\r][\n]"
+13:01:46.118 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+13:01:46.119 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+13:01:46.119 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "access-control-allow-credentials: true[\r][\n]"
+13:01:46.119 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "Cache-Control: max-age=43200[\r][\n]"
+13:01:46.119 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"[\r][\n]"
+13:01:46.119 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "expires: -1[\r][\n]"
+13:01:46.119 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}[\r][\n]"
+13:01:46.119 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "pragma: no-cache[\r][\n]"
+13:01:46.119 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=btayHe6nzSg6zqun80tfh2YWXe0Ujh%2Bp2CbqPaIWP0Y%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1764132795"}],"max_age":3600}[\r][\n]"
+13:01:46.119 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=btayHe6nzSg6zqun80tfh2YWXe0Ujh%2Bp2CbqPaIWP0Y%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1764132795"[\r][\n]"
+13:01:46.119 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "Server: cloudflare[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "vary: Origin, Accept-Encoding[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "via: 2.0 heroku-router[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "x-content-type-options: nosniff[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "x-powered-by: Express[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "x-ratelimit-limit: 1000[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "x-ratelimit-remaining: 964[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "x-ratelimit-reset: 1764132798[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "Age: 25316[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "cf-cache-status: HIT[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "Content-Encoding: gzip[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "CF-RAY: 9a4fed832fed3b13-BOM[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "Content-Length: 329[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "[\r][\n]"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << HTTP/1.1 200 OK
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << Date: Thu, 27 Nov 2025 07:31:45 GMT
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << Content-Type: application/json; charset=utf-8
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << Connection: keep-alive
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << access-control-allow-credentials: true
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << Cache-Control: max-age=43200
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << expires: -1
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << pragma: no-cache
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=btayHe6nzSg6zqun80tfh2YWXe0Ujh%2Bp2CbqPaIWP0Y%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1764132795"}],"max_age":3600}
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=btayHe6nzSg6zqun80tfh2YWXe0Ujh%2Bp2CbqPaIWP0Y%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1764132795"
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << Server: cloudflare
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << vary: Origin, Accept-Encoding
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << via: 2.0 heroku-router
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << x-content-type-options: nosniff
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << x-powered-by: Express
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << x-ratelimit-limit: 1000
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << x-ratelimit-remaining: 964
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << x-ratelimit-reset: 1764132798
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << Age: 25316
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << cf-cache-status: HIT
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << Content-Encoding: gzip
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << CF-RAY: 9a4fed832fed3b13-BOM
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.headers -- << Content-Length: 329
+13:01:46.120 [TestNG-PoolService-1] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+13:01:46.135 [TestNG-PoolService-1] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+13:01:46.135 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]E[0x91]Mo[0x83]0[0xc][0x86][0xef][0xfd][0x15][0x11][0xe7][0x5][0x95][0xf2][0xbd][0xd3]>[0xe]=[0xac][0x93][0xa6][0xed][0x17][0x18][0xb0] ZH[0x90][0x13][0xd6][0xd1][0x8a][0xff][0xbe][0x10]Jw[0x89][0xe2][0xf7][0xb1]c[0xfb][0xcd]u[0xc7]X [0x9a][0xe0][0x91]E[0xf][0xcb]UA[0x8f].[0x8]N[0x8]J!;[0x12]t[0xd0][0x7][0x1e][0x8d][0x6]i[0xc3]/[0x84]vU[0xb1][0x7]![0x17][0xe9]K[0xa8][0x1a][0x9][0x9f]` ![0xc3]J\V[0xe]MCh[0x8c][0xcb][0xb8][0xba][0xd0][0x9][0xc6][0x12][0xba]bW[0xf1]6J0[0xec]$[0xda]n}k[0x81][0xa3][0xb0][0xbe][0xc1][0xf3]`C[0x96][0xa6][0xd9][0x6]ja[0xa7]E?[0x9e]QU[0x9a][0xf4][0xd8]v[0x1b][0xba][0x88][0xa1][0xd6][0x8d][0xaf]*[0xf]eY[0xf0][0xb8][0xc8][0x93][\r][0xb6][0xa8][0xef][0xad]]([0xc1]w[0xe6]q[0x1e][0xc6]QZ[0xde][0xb2][0x16][0xa0][0xda][0x5][0x14]Q[0x18]%e[0x16]xyv[0xe7][0xec][0x97][0x18]:[0xad]|[0x83][0x88][0xe7][0xf9][0x9e][0xe7]q[0xc6][0x8b]}[0x1c][0xb1][0xdf]4K[0x92][0xc3][0xba][0xe8][0x19]+s[0x1b][0xbe][0x13][0xb2][0xc1][0x16][0xa8][0x9]5[0xb5]+[0xad]u?[0x80][0x9a][0xfe]m[0xd8][0x9c][0xfc][0xd4]=[0xb4]#[0x12][0xf0]W[0xd2][\n]"
+13:01:46.135 [TestNG-PoolService-1] DEBUG org.apache.http.wire --  << "[0xee][0xfb][0x82][0xad][0xbb][0x8f][0x8e][0xc0][0xf8][0xac][0xf7]QZ[0xc1]%L[0xce][0xe1][0x86][0xd5]R[0xa0][0xb2][0xdc][0xfd][0xc7][0xf][0x12]S8[0x12]H[0xae][0xf0][0xee]be[0xfc][0x14]@[0xca]9[0xcf][0x8][0x1d][0xb5][0xa2]G[0x86][0xbc][0x7][0xfa]Fk[0x96][0xfd][0xe6][0xdd][0xfc][0x7]gH[0xce]E[0xfd][0x1][0x0][0x0]"
+13:01:46.135 [TestNG-PoolService-1] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:01:46.202 [TestNG-PoolService-1] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@b9e1d62
+13:01:46.203 [TestNG-PoolService-1] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+  When I send a GET request to retrieve user data        # com.automation.framework.steps.api.APISteps.iSendAGETRequestToRetrieveUserData()
+13:01:46.203 [TestNG-PoolService-1] INFO com.automation.framework.steps.api.APISteps -- Verifying response status and content
+  Then I should receive a valid response with status 200 # com.automation.framework.steps.api.APISteps.iShouldReceiveAValidResponseWithStatus200()
+13:01:46.220 [TestNG-PoolService-1] INFO com.automation.framework.steps.api.APISteps -- Cleaning up TestContext after API test
+Nov 27, 2025 1:01:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 142
+Nov 27, 2025 1:01:50 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 142.0.7444.176. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+13:01:50.211 [TestNG-PoolService-1] INFO com.automation.framework.steps.ui.UISteps -- Navigating to window practice page
+  Given I am on the window practice page with title "How to handle multiple windows using selenium" # com.automation.framework.steps.ui.UISteps.iAmOnTheWindowPracticePage(java.lang.String)
+13:01:53.066 [TestNG-PoolService-1] INFO com.automation.framework.steps.ui.UISteps -- Clicking on the home button
+  When I click on the home button                                                                   # com.automation.framework.steps.ui.UISteps.iClickOnTheHomeButton()
+13:01:53.239 [TestNG-PoolService-1] INFO com.automation.framework.steps.ui.UISteps -- Verifying a new tab opened
+13:01:53.272 [TestNG-PoolService-1] INFO com.automation.framework.steps.ui.UISteps -- Window handles: F989440C907AA675D4C32AD40F81FCB4, A5BB849AF7734667E8FDA2CB62BB8323
+  Then a new tab should open                                                                        # com.automation.framework.steps.ui.UISteps.aNewTabShouldOpen()
+13:01:53.272 [TestNG-PoolService-1] INFO com.automation.framework.steps.ui.UISteps -- Switching to the newly opened tab
+  When I switch to the newly opened tab                                                             # com.automation.framework.steps.ui.UISteps.iSwitchToTheNewlyOpenedTab()
+13:01:55.347 [TestNG-PoolService-1] INFO com.automation.framework.steps.ui.UISteps -- Title of the page: QA Playground: Practice Automation Testing with Selenium
+  Then I print the title of the page                                                                # com.automation.framework.steps.ui.UISteps.iPrintTheTitleOfThePage()
+13:01:55.347 [TestNG-PoolService-1] INFO com.automation.framework.steps.ui.UISteps -- Closing the parent window
+  When I close the parent window                                                                    # com.automation.framework.steps.ui.UISteps.iCloseTheParentWindow()
+13:01:55.471 [TestNG-PoolService-1] INFO com.automation.framework.steps.ui.UISteps -- Verifying child window remains
+  Then the child window should remain                                                               # com.automation.framework.steps.ui.UISteps.theChildWindowShouldRemain()
+13:01:55.479 [TestNG-PoolService-1] INFO com.automation.framework.steps.ui.UISteps -- Closing the child window
+  When I close the child window                                                                     # com.automation.framework.steps.ui.UISteps.iCloseTheChildWindow()
+13:01:55.854 [TestNG-PoolService-1] INFO com.automation.framework.steps.ui.UISteps -- All windows closed
+  Then all windows should be closed                                                                 # com.automation.framework.steps.ui.UISteps.allWindowsAreClosed()
+13:01:55.854 [TestNG-PoolService-1] INFO com.automation.framework.steps.ui.UISteps -- Capturing final screenshot and tearing down WebDriver and TestContext after test
+13:01:55.860 [TestNG-PoolService-1] WARN com.automation.framework.steps.ui.UISteps -- Failed to capture screenshot: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {args=[], script=return Math.max(document.body.scrollHeight, document.body.offsetHeight,
+    document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\AMIT11~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56722}, goog:processID: 28056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56722/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Nov 27, 2025 1:01:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 142
+Nov 27, 2025 1:01:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 142.0.7444.176. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+13:01:56.011 [TestNG-PoolService-2] INFO com.automation.framework.steps.ui.UISteps -- Navigating to window practice page
+  Given I am on the window practice page with title "How to handle multiple windows using selenium" # com.automation.framework.steps.ui.UISteps.iAmOnTheWindowPracticePage(java.lang.String)
+13:01:59.200 [TestNG-PoolService-2] INFO com.automation.framework.steps.ui.UISteps -- Clicking on the Multiple windows button
+  When I click on the Multiple windows button                                                       # com.automation.framework.steps.ui.UISteps.iClickOnTheMultipleWindowsButton()
+13:01:59.365 [TestNG-PoolService-2] INFO com.automation.framework.steps.ui.UISteps -- Verifying multiple windows opened
+13:02:00.235 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:49200<->172.67.167.151:443 closed
+  Then multiple windows should open                                                                 # com.automation.framework.steps.ui.UISteps.multipleWindowsShouldOpen()
+13:02:00.466 [TestNG-PoolService-2] INFO com.automation.framework.steps.ui.UISteps -- Printing all window titles
+13:02:00.482 [TestNG-PoolService-2] INFO com.automation.framework.steps.ui.UISteps -- Window title: How to handle multiple windows using selenium
+13:02:00.532 [TestNG-PoolService-2] INFO com.automation.framework.steps.ui.UISteps -- Window title: How to handle drop-down using select class of selenium
+  When I print all the window titles                                                                # com.automation.framework.steps.ui.UISteps.iPrintAllTheWindowTitles()
+13:02:00.532 [TestNG-PoolService-2] INFO com.automation.framework.steps.ui.UISteps -- Closing all windows
+  Then I close all windows                                                                          # com.automation.framework.steps.ui.UISteps.iCloseAllWindows()
+13:02:00.837 [TestNG-PoolService-2] INFO com.automation.framework.steps.ui.UISteps -- All windows closed
+  Then all windows should be closed                                                                 # com.automation.framework.steps.ui.UISteps.allWindowsAreClosed()
+13:02:00.837 [TestNG-PoolService-2] INFO com.automation.framework.steps.ui.UISteps -- Capturing final screenshot and tearing down WebDriver and TestContext after test
+13:02:00.838 [TestNG-PoolService-2] WARN com.automation.framework.steps.ui.UISteps -- Failed to capture screenshot: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {args=[], script=return Math.max(document.body.scrollHeight, document.body.offsetHeight,
+    document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\AMIT11~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56826}, goog:processID: 41240, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56826/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.23 s -- in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  30.372 s
+[INFO] Finished at: 2025-11-27T13:02:01+05:30
+[INFO] ------------------------------------------------------------------------
